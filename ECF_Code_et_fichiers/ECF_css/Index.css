@@ -1,0 +1,227 @@
+/*
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #EBF2FA;
+}
+
+/* les diverses tailles et poids des polices */
+
+h1 {
+  font-family: 'Inter', sans serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+ 
+h2 {
+  font-family: 'Inter', sans serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: 'Inter', sans serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+h4 {
+  font-family: 'Inter', sans serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+h5 {
+  font-family: 'Inter', sans serif;
+  font-size: 14px;
+  font-weight: normal;
+}
+p {
+  font-family: 'Inter', sans serif;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+/* taille du logo et du menu burger */
+
+header img {
+  max-width: 50%;
+}
+.container-logo-et-burger {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 10px 0 0 0;
+
+}
+/* alignement du menu à droite */
+header nav {
+  display: flex;
+  justify-content: end;
+}
+/* créer la boîte du menu */
+li {
+  background-color: #4274a1;
+  list-style: none;
+}
+.pop-up-menu {
+  background-color: #4274a1;;
+  border: solid;
+  border-color: #4274a1 ;
+  padding: 10px;
+  position:absolute;
+  top: -9999px;
+  left: -9999px;
+}
+a {
+  color: white;
+  background-color: #4274a1;
+  text-decoration: none;
+}
+
+/* mise en page de base du formulaire */
+
+input {
+  font-size: 1rem;
+  border-radius: 30px;
+
+}
+
+.main-button button {
+  font-size: 1rem;
+  border-radius: 30px;
+  background-color: #adff87;
+  width: 200px;
+  height: 40px;
+
+}
+
+/* présenter la photo d'accueil avec les titres cachés car déjà sur la photo */
+
+.image-container img {
+  width: 100%;
+  max-width: auto;
+}
+
+.image-container h1 {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+.image-container h2 {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+/* interroger la taille de l'écran pour afficher la bonne photo et les sections en bonne place */
+
+/* ----------- pour les mobiles ----------------------*/
+
+@media screen and (max-width: 425px) {
+  .photo-desktop {
+    display: none;
+  }
+  form {
+  margin: 0 auto;
+  width: 50%;
+  height: 30%;
+  }
+  /* faire disparaitre les textes pour les mobiles */
+  form p{
+    display: none;
+  }
+  .container-infos {
+    display: none;
+  }
+  
+}
+
+/* ----------- pour les desktops ----------------------*/
+
+@media screen and (min-width: 426px) {
+
+  /* conteneur global flex */
+  .main-parent {
+    display: flex;
+    justify-content: space-around;
+    margin:0;
+  }
+  .photo-mobile {
+    display: none;
+    }
+  /* mettre le formulaire à droite de la photo */
+
+  .main-illustration {
+    max-width:50%;
+    padding-left: 20px;
+  }
+  .main-formulaire {
+    width:50%;
+    padding-left: 40px;
+    font-size: 2rem;
+
+  }
+  /* agrandir les etxtes et boutons */
+  
+  form p {
+    font-size:1.5rem;
+    font-weight: 800;
+    color: #4274a1;
+  }
+  input {
+    line-height: 2.5rem;
+  }
+
+  .main-button button {
+    height:80px;
+    width: 300px;
+    font-size: 1.5rem;
+    background-color: #adf8ad;
+    color: black;
+    border-color:#adf8ad;
+    box-shadow:5px 10px green ;
+    
+}
+  .container-infos{
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    padding-left: 20px;
+  
+  }
+  .container-infos p{
+    font-size: 0.8rem;
+    border: solid;
+    border-radius: 30px;
+    border-color: #4274a1;
+    margin: 10px;
+    padding: 10px;
+  }
+}
+
+ 
+/* --------------menu du footer------------------ */
+
+/* créer la boîte du menu */
+.menu-footer a{
+  display:inline-block;
+}
+
+.menu-footer {
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+  background-color: #4274a1;;
+  border: solid;
+  border-color: #4274a1 ;
+  padding: 10px;
+  position:fixed;
+  bottom: 0;
+  font-size: x-small;
+}
+
+
+

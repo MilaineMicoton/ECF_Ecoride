@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covoit Ecoride</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+    <link href="/ECF_css/Index.css" rel="stylesheet">
+</head>
+<body>
+
+    
+<header>
+    <div class="container-logo-et-burger">
+
+    <img src = "/ECF_images/Comp_logo_Covoit_Ecoride.png" alt="Logo Covoit Ecoride">
+
+    <img src = "/ECF_images/Comp_icone_burger.png" alt="Icone menu burger">
+
+
+    
+    </div>    
+
+    
+        <nav>
+            <div class="pop-up-menu">
+            <ul>
+                <li><a href="Index.html">Chercher un covoiturage</a></li>
+                <li></li>
+                <li><a href="Covoiturages_disponibles.html">Covoiturages disponibles</a></li>
+            </ul>  
+            </div>     
+        </nav>
+    
+    
+</header>
+    
+
+<main>
+    <div class="main-parent">
+
+    <section class="main-illustration">
+            <!-- cette section contient l'illustration de la page d'accueil -->
+           
+            <div class = "image-container"> 
+                <img class="photo-mobile" src="/ECF_images/ECF-photo-accueil.png"  alt = "image de circulation encadrée par de la forêt et tenue sur une télécommande">
+                <img class = "photo-desktop" src="/ECF_images/ECF-photo-accueil-desktop.png"  alt = "image de circulation encadrée par de la forêt et tenue sur une télécommande">
+
+                <h2>Bon pour le climat, économique et amical</h2>
+                <h1>Trouvez le covoiturage qui vous convient</h1> 
+            
+            </div>    
+            
+    </section>
+ 
+    <section class="main-formulaire">
+
+       
+        
+        <!-- cette section contient un formulaire: les barres de recherche des villes et de la date -->
+
+        <!-- container flex-->
+        <!--<div class="container-formulaire"> -->
+
+        <form action="" method="post">
+
+            <!-- container flex-->
+            <div class="container-formulaire">
+
+                <!-- villes de départ et d'arrivée -->
+                <p>Où allez-vous?</p>
+                
+                <br>
+                <input type="text" id="ville-depart" name="nom-de-ville" placeholder=" Ville de départ" size="20" maxlength="40">
+
+                <div>&nbsp</div>
+                
+                <input type="text" id="ville-arrivee" name="nom-de-ville" placeholder=" Ville d'arrivée" size="20" maxlength="40">
+                
+                <div>&nbsp</div>
+
+                 <!-- date du trajet-->
+            
+                <input 
+                    type="date"
+                    id="start" 
+                    name="trip-start"
+                    value="2025-07-22"
+                    min="2025-01-01"
+                    max="2025-12-31" />
+
+                    <div>&nbsp</div>
+
+                <!-- bouton envoyer le formulaire-->
+
+                    <div class="main-button">
+
+                        <button type="submit">Rechercher un covoiturage</button>
+                        <!--<img src = "/ECF_images/Comp_icone_fusee.png" alt="Icone fusée envoyer la recherche de covoit"> -->
+
+                    </div>
+
+             </div>
+        </form>
+
+        
+    </section> 
+    <!-- fermeture div parent-->
+    </div>
+    <section>
+    <!-- cette section regroupe les textes d'information et n'apparait que sue le desktop-->
+
+    <div class="container-infos">
+
+        <p>Nihil morati post haec militares avidi saepe turbarum adorti sunt Montium primum, qui divertebat in proximo, levi corpore senem atque morbosum, et hirsutis resticulis cruribus eius innexis divaricaturn sine spiramento ullo ad usque praetorium traxere praefecti.</p>
+        
+        <p>Nihil morati post haec militares avidi saepe turbarum adorti sunt Montium primum, qui divertebat in proximo, levi corpore senem atque morbosum, et hirsutis resticulis cruribus eius innexis divaricaturn sine spiramento ullo ad usque praetorium traxere praefecti.</p>
+    
+    </div>
+    </section>
+</main>
+    
+<footer>
+        <nav>
+            
+            <div class="menu-footer">
+
+                <a href="Index.html">Chercher un covoiturage</a>
+
+                <a href="Covoiturages_disponibles.html">Covoiturages disponibles</a>
+
+                <a href="A_propos.html">A propos</a>
+
+            </div>
+                
+        </nav>
+        
+</footer>
+
+</body>
+</html>
