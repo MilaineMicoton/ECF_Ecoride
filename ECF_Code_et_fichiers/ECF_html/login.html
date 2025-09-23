@@ -9,11 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     
-    <link href="/ECF_css/Covoiturages_disponibles.css" rel="stylesheet">
+    <link href="/ECF_css/Index.css" rel="stylesheet">
+    <link href="/ECF_css/login.css" rel="stylesheet">
 </head>
-
 <body>
 
+    
 <header>
     <div class="container-logo-et-burger">
 
@@ -50,79 +51,41 @@
     </nav>
     
 </header>
-
-<!--    
-<header>
-    <div class="container-logo-et-burger">
-
-    <img src = "/ECF_images/Comp_logo_Covoit_Ecoride.png" alt="Logo Covoit Ecoride">
-
-    <img src = "/ECF_images/Comp_icone_burger.png" alt="Icone menu burger">
-
-
-    
-    </div>    
-
-    
-        <nav>
-            <div class="pop-up-menu">
-            <ul>
-                <li><a href="Index.html">Chercher un covoiturage</a></li>
-                <li></li>
-                <li><a href="Covoiturages_disponibles.html">Covoiturages disponibles</a></li>
-            </ul>  
-            </div>     
-        </nav>
-    
-    
-</header> -->
 <main>
+    <div class="container">
+        <div class="wrapper">
+            <section class="login">
+                <h1>Connexion</h1>
+                    <form>
+                        <div class="input-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="email">
+                            <label for="">Email</label>
+                        </div>
+                        <div class="input-box">
+                            <ion-icon name="lock-open"></ion-icon>
+                            <input type="password">
+                            <label for="">Mot de passe</label>
+                        </div>
+                        <div class="forgot">
+                            <input type="checkbox">
+                            <label for="">Mot de passe oublié?</label>
+                        </div>
 
-<section>
-<!--Cette section montre les données de recherche saisies par l'usager dans la page d'accueil -->
+                        <button>Connexion</button>
 
+                        <div class="register">
+                            <span>Pas de compte?</span>
+                            <a href="">Inscrivez-vous</a>
+                        </div>
+                    </form>
 
-<table>
-    <caption>Votre recherche</caption>
-        <tr>
-            <td>dr-horaire-départ</td>
-            <td>dr-ville-depart</td>
-            <td>dr-ville-arrivee</td>
-        </tr>
-        <tr>
-            <td>dr-date</td>
-            <td>dr-nbre-passagers</td>
-            <td>dr-filtre</td>
-        </tr>
-</table>
-
-<p>&nbsp</p>
-
-<table>
-    <caption>Covoiturage disponible</caption>
-        <tr>
-            <td>db-horaire-depart</td>
-            <td>db-ville-depart</td>
-            <td>db-nbr-places</td>
-        </tr>
-        <tr>
-            <td>db-duree-trajet</td>
-            <td>db-photo-conduct</td>
-            <td>db-prix-trajet</td>
-        </tr>
-        <tr>
-            <td>db-horaire-arrivee</td>
-            <td>db-ville-arrivee</td>
-            <td>db-note-conduct</td>
-        </tr>
-
-</table>
-
-</section>
+            </section>
+        </div>
+    </div>
 
 </main>
-    
-<footer>
+    <footer>
         <nav>
             
             <div class="menu-footer">
@@ -138,6 +101,7 @@
         </nav>
         
 </footer>
-
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

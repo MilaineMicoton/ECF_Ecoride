@@ -57,30 +57,90 @@ header img {
     padding: 10px 0 0 0;
 
 }
+
+/* menu header en ligne */
+
+.menu-header-ligne {
+    width: 700px;
+    height: 50px;
+    background-color: #4274a1;
+    display: flex;
+    justify-content: space-around;
+    position:absolute;
+    align-items: center;
+  /* seulemnt visible sur grands écrans, voir média queries*/
+    top: -9999px;
+    right: -9999px;
+}
+.menu-header-ligne a{
+  display:inline-block;
+  background-color: #4274a1;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* ---------- l'icone du menu burger -------*/
+
+#burger-icone {
+    width:40px;
+    height:40px;
+    position: absolute;
+    top:20px;
+    right:20px;
+    line-height: 30px;
+    text-align: center;
+    font-family: ardoise, sans-serif;
+    font-size: 3em;
+    font-weight: bolder;
+    border-style:none;
+    background-color:#ADFF87;
+}
+
+/* ---------------------boite cachée (ou pas) du menu----------------- */
+
 /* alignement du menu à droite */
-header nav {
+header > nav {
   display: flex;
   justify-content: end;
 }
 /* créer la boîte du menu */
 li {
-  background-color: #4274a1;
+  background-color:#4274a1;
   list-style: none;
 }
-.pop-up-menu {
-  background-color: #4274a1;;
+/* style du texte des liens */
+header a{
+    background-color:#4274a1;
+    color: white;
+    text-decoration: none;
+}
+/* style de la boite (cachée ou pas) contenant les liens */
+#pop-up-menu {
+  background-color:#4274a1;
   border: solid;
-  border-color: #4274a1 ;
+  border-color:#4274a1;
+  color:white;
   padding: 10px;
   position:absolute;
-  top: -9999px;
-  left: -9999px;
+  top:5px;
+  right:5px;
 }
-a {
-  color: white;
-  background-color: #4274a1;
-  text-decoration: none;
-}
+/* popover */
+:popover-open {
+        width: 200px;
+        height: 70px;
+        position: absolute;
+        inset: unset;
+        margin: 0;
+        border: solid;
+        padding: 10px;
+        top:5px;
+        right:5px;
+      }
+
+
+
 /*
 /* -------------------------------------------- fin du header ----------------------------------------
 */
@@ -98,8 +158,6 @@ table {
 
 
 
-
-
 /* ----------------------------------------code commun à toutes les pages: footer -------------------
 */
 /* --------------menu du footer------------------ */
@@ -107,6 +165,9 @@ table {
 /* créer la boîte du menu */
 .menu-footer a{
   display:inline-block;
+  background-color: #4274a1;
+    color: white;
+    text-decoration: none;
 }
 
 .menu-footer {
@@ -117,7 +178,69 @@ table {
   border: solid;
   border-color: #4274a1 ;
   padding: 10px;
-  position:fixed;
+  /*position:fixed;*/
   bottom: 0;
-  font-size: x-small;
+  font-size: 0.5rem;
 }
+
+/*-------------------- les media queries -----------------*/
+
+/* interroger la taille de l'écran pour afficher les sections en bonne place */
+
+/* ----------- pour les mobiles -----RIEN-----------------*/
+
+/* ----------- pour les PC 1024 px   ----------------------*/
+
+@media screen and (min-width: 1024px) {
+    
+    h3 {
+      font-size: 3rem;;
+      color: #4274a1;
+    }
+    /* faire apparaitre le menu en ligne et disparaitre le burger */
+    .menu-header-ligne {
+    top:100px;
+    right:20px;
+    }
+    #burger-icone {
+    display:none;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    
+    h3 {
+      font-size: 3.5rem;;
+      color: #4274a1;
+    }
+    form p {
+    font-size:2rem;
+    font-weight: 800;
+    color: #4274a1;
+  
+  }
+  input {
+    width: 400px;
+    line-height: 3rem;
+  }
+
+  .main-button > button {
+    height:100px;
+    width: 320px;
+    font-size: 1.7rem;
+    background-color: #adf8ad;
+    color: black;
+    border-color:#adf8ad;
+    box-shadow:5px 10px green ;
+    padding: 10px;    
+}
+
+  .container-infos p{
+    font-size: 1.6rem;
+    border: solid;
+    border-radius: 30px;
+    border-color: #4274a1;
+    margin: 10px;
+    padding: 10px;
+  }
+  }

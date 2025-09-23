@@ -17,25 +17,37 @@
 <header>
     <div class="container-logo-et-burger">
 
-    <img src = "/ECF_images/Comp_logo_Covoit_Ecoride.png" alt="Logo Covoit Ecoride">
+        <!-- logo du header-->
 
-    <img src = "/ECF_images/Comp_icone_burger.png" alt="Icone menu burger">
+        <img src = "/ECF_images/Comp_logo_Covoit_Ecoride.png" alt="Logo Covoit Ecoride">
 
+        <!-- la barre du menu pour les grands écrans remplace le menu burger -->
 
-    
+        <div class="menu-header-ligne">
+
+                <a href="Index.html">Chercher un covoiturage</a>
+
+                <a href="Covoiturages_disponibles.html">Covoiturages disponibles</a>
+
+                <a href="A_propos.html">A propos</a>
+
+        </div>
+
+        <!--button toggle popover menu avec charactère burger -->
+ 
+        <button id="burger-icone"  popovertarget="pop-up-menu"  popovertargetaction="show" >≡</button>
+     
     </div>    
 
-    
-        <nav>
-            <div class="pop-up-menu">
+    <nav>
+        <div id="pop-up-menu" popover>
             <ul>
                 <li><a href="Index.html">Chercher un covoiturage</a></li>
                 <li></li>
                 <li><a href="Covoiturages_disponibles.html">Covoiturages disponibles</a></li>
             </ul>  
-            </div>     
-        </nav>
-    
+        </div>     
+    </nav>
     
 </header>
     
@@ -63,8 +75,6 @@
         
         <!-- cette section contient un formulaire: les barres de recherche des villes et de la date -->
 
-        <!-- container flex-->
-        <!--<div class="container-formulaire"> -->
 
         <form action="" method="post">
 
@@ -72,16 +82,16 @@
             <div class="container-formulaire">
 
                 <!-- villes de départ et d'arrivée -->
-                <p>Où allez-vous?</p>
+                <h3>Où allez-vous?</h3>
                 
                 <br>
                 <input type="text" id="ville-depart" name="nom-de-ville" placeholder=" Ville de départ" size="20" maxlength="40">
 
-                <div>&nbsp</div>
+                <div>&nbsp;</div>
                 
                 <input type="text" id="ville-arrivee" name="nom-de-ville" placeholder=" Ville d'arrivée" size="20" maxlength="40">
                 
-                <div>&nbsp</div>
+                <div>&nbsp;</div>
 
                  <!-- date du trajet-->
             
@@ -89,20 +99,25 @@
                     type="date"
                     id="start" 
                     name="trip-start"
-                    value="2025-07-22"
-                    min="2025-01-01"
+                    value="2025-07-01"
+                    min="2025-07-01"
                     max="2025-12-31" />
 
-                    <div>&nbsp</div>
+                    <div>&nbsp;</div>
 
                 <!-- bouton envoyer le formulaire-->
 
                     <div class="main-button">
 
-                        <button type="submit">Rechercher un covoiturage</button>
-                        <!--<img src = "/ECF_images/Comp_icone_fusee.png" alt="Icone fusée envoyer la recherche de covoit"> -->
-
+                        <button type="submit">Covoits Disponibles</button>
+                        <!-- icone fusée à incorporer prochaine itération
+                        <div class="icone-fusee">
+                            <img src = "/ECF_images/Comp_icone_fusee.png" alt="Icone fusée envoyer la recherche de covoit">
+                        </div>
+                    -->
                     </div>
+
+                    <div>&nbsp;</div>
 
              </div>
         </form>
@@ -140,6 +155,8 @@
         </nav>
         
 </footer>
+
+<script src="/ECF_js/Index.js"></script>
 
 </body>
 </html>
