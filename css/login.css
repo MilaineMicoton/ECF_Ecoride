@@ -1,0 +1,93 @@
+
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom:40px;
+    color: white;
+    
+}
+p , a , label , span {
+    color: white;
+    background-color: #064089;
+}
+#mail-outline , #lock-open , #insc-mail-outline , #insc-lock-open {
+    color: white;
+}
+
+.login {
+    width:80%;
+    height:80%;
+    margin:40px;
+    
+}
+
+form{
+    width:100%;
+    margin:auto;
+    padding: 15%;
+    border-spacing:20% 2rem;
+    background-color: #064089;
+    border-radius: 30px;;
+}
+form > * {
+    background-color: #064089;
+}
+
+.submit-button {
+    display:flex;
+    justify-content:center;
+}
+
+#adresse-mail , #mot-de-passe , #insc-adresse-mail , #insc-mot-de-passe {
+    border-top:0;
+    border-radius: 0;
+    border-left: 0;
+    border-right:0;
+    margin-left: 30px;
+}
+.wrapper {
+    height: auto;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+/* à partir d'ici c'est pour glisser vers s'enregistrer */
+    transition: transform 0.5s ease-in-out;
+    width:200%; /*double the width to accomodate both sections */
+}
+.container {
+    width:100%;
+    max-width:30rem;
+    background-color:transparent;
+    padding:3rem 2rem;
+    border-radius:30px;
+    color:white;
+    border:#ffffff80 solid 2px;
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+    position:relative;
+}
+
+section {
+    width:50%; /* each section takes half of the wrapper's width */
+    padding: 2rem;
+    box-sizing:border-box;
+}
+
+.login , .inscription {
+    flex: 1;
+}
+ 
+.hidden {
+    transform: translateX(-50%);
+}
+/*
+.register-option {
+    display:flex;
+    justify-content:center;
+}
+
+.register-option a:hover{
+    text-decoration: underline;
+}*/
