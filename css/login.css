@@ -14,15 +14,27 @@ p , a , label , span {
 #mail-outline , #lock-open , #insc-mail-outline , #insc-lock-open {
     color: white;
 }
+.container{
+    margin: auto;
+}
 
 .login {
-    width:80%;
-    height:80%;
-    margin:40px;
+    width:100%;
+    height:auto;
+    margin:auto;
+    padding:0 50px 0 50px;;
     
 }
 
-form{
+.inscription {
+    width:100%;
+    height:auto;
+    margin:auto;
+    padding:0 50px 0 50px;
+    
+}
+
+form {
     width:100%;
     margin:auto;
     padding: 15%;
@@ -39,26 +51,24 @@ form > * {
     justify-content:center;
 }
 
-#adresse-mail , #mot-de-passe , #insc-adresse-mail , #insc-mot-de-passe {
+#adresse-mail , #mot-de-passe , #insc-adresse-mail , #insc-mot-de-passe, #mdp-oubli {
     border-top:0;
     border-radius: 0;
     border-left: 0;
     border-right:0;
     margin-left: 30px;
 }
-.wrapper {
-    height: auto;
-    margin:auto;
-    display:flex;
-    justify-content:center;
-    align-items: center;
-/* à partir d'ici c'est pour glisser vers s'enregistrer */
-    transition: transform 0.5s ease-in-out;
-    width:200%; /*double the width to accomodate both sections */
+
+input#mdp-oubli {
+    width:20px;
+    height:auto;
+    padding:0;
+    margin:0;
 }
+
 .container {
     width:100%;
-    max-width:30rem;
+    max-width:50rem;
     background-color:transparent;
     padding:3rem 2rem;
     border-radius:30px;
@@ -68,6 +78,18 @@ form > * {
     overflow: hidden;
     position:relative;
 }
+.wrapper {
+    height: auto;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+/* à partir d'ici c'est pour glisser vers s'enregistrer */
+    transition: transform 0.5s ease-in-out;
+    width:200%; /*double the width to accomodate both sections */
+}
+
+
 
 section {
     width:50%; /* each section takes half of the wrapper's width */
@@ -82,12 +104,80 @@ section {
 .hidden {
     transform: translateX(-50%);
 }
-/*
-.register-option {
-    display:flex;
-    justify-content:center;
+
+/* les media queries pour ajuster à la taille d'écran
+
+
+/*--------------- minimum 1400px ----------------*/
+
+@media (min-width:1400px) {
+
+
+main {
+    margin: 0 300px 0 300px;
+}
 }
 
-.register-option a:hover{
-    text-decoration: underline;
-}*/
+/*--------------- max 500px ----------------*/
+
+@media (max-width:500px) {
+
+.login {
+    min-width: 300px;
+    padding: 0 35px 0 35px;
+}
+
+.inscription {
+    min-width: 300px;
+    padding: 0 35px 0 35px;
+}
+
+input#adresse-mail {
+    margin-left: 0;
+}
+
+input#mot-de-passe {
+    margin-left: 0;
+}
+
+input#insc-adresse-mail {
+    margin-left: 0;
+}
+
+input#insc-mot-de-passe {
+    margin-left: 0;
+}
+}
+/*---------------- max 424px ----------------*/
+
+@media (max-width:424px) {
+
+    .login {
+        min-width: 330px;
+        padding:0 35px 0 35px;
+    }
+    .inscription {
+    min-width: 330px;
+    padding:0 35px 0 35px;
+
+}
+
+}
+/*---------------- max 374px ----------------*/
+
+@media (max-width:374px) {
+
+    .login {
+        width: 100%;
+        padding:0 32px 0 32px;
+        margin:0 0 0 0;
+    }
+
+    .inscription {
+    width: 100%;
+    padding:0 32px 0 32px;
+    margin:0 0 0 0;
+
+}
+    
+}
