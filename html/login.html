@@ -1,57 +1,3 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Covoit Ecoride</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    
-    <link href="../css/index.css" rel="stylesheet">
-    <link href="../css/login.css" rel="stylesheet">
-</head>
-<body>
-
-    
-<header>
-    <div class="container-logo-et-burger">
-
-        <!-- logo du header-->
-
-        <img src = "../images/Comp_logo_Covoit_Ecoride.png" alt="Logo Covoit Ecoride">
-
-        <!-- la barre du menu pour les grands écrans remplace le menu burger -->
-
-        <div class="menu-header-ligne">
-
-                <a href="../index.html">Chercher un covoiturage</a>
-
-                <a href="../html/Covoiturages_disponibles.html">Covoiturages disponibles</a>
-
-                <a href="../html/login.html">Connexion</a>
-
-        </div>
-
-        <!--button toggle popover menu avec charactère burger -->
- 
-        <button id="burger-icone"  popovertarget="pop-up-menu"  popovertargetaction="show" >≡</button>
-     
-    </div>    
-
-    <nav>
-        <div id="pop-up-menu" popover>
-            <ul>
-                <li><a href="../index.html">Chercher un covoiturage</a></li>
-                <li></li>
-                <li><a href="../html/Covoiturages_disponibles.html">Covoiturages disponibles</a></li>
-            </ul>  
-        </div>     
-    </nav>
-    
-</header>
-
 <main>
 
     <div class="container">
@@ -96,7 +42,7 @@
 <br>  
                          <div class="option-inscription">
                         <span>Pas de compte?</span>
-                            <a href="" id="switch-vers-inscription">Inscrivez-vous</a>
+                            <a href="#switch-vers-connexion" id="switch-vers-inscription">Inscrivez-vous</a>
                          </div>
                         
 
@@ -133,7 +79,7 @@
 <br>
  
                         <div class="submit-button">
-                        <input type="submit" value="Enregistrer" maxlength="20">
+                        <input type="submit" value="Inscription" maxlength="20">
                         </div>
 
 <br>
@@ -141,7 +87,7 @@
 <br>
                         <div class="option-connexion">
                             <span>Déjà inscrit?</span>
-                            <a href="" id="switch-vers-connexion">Connectez-vous</a>
+                            <a href="#switch-vers-inscription" id="switch-vers-connexion">Connectez-vous</a>
                         </div>
                         
                     </form>
@@ -151,24 +97,3 @@
     </div>
 
 </main>
-    <footer>
-        <nav>
-            
-            <div class="menu-footer">
-
-                <a href="../index.html">Chercher un covoiturage</a>
-
-                <a href="../html/Covoiturages_disponibles.html">Covoiturages disponibles</a>
-
-                <a href="../html/login.html">Connexion</a>
-
-            </div>
-                
-        </nav>
-        
-</footer>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script src="../scripts/login.js"></script>
-</body>
-</html>

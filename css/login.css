@@ -78,6 +78,7 @@ input#mdp-oubli {
     overflow: hidden;
     position:relative;
 }
+
 .wrapper {
     height: auto;
     margin:auto;
@@ -89,8 +90,6 @@ input#mdp-oubli {
     width:200%; /*double the width to accomodate both sections */
 }
 
-
-
 section {
     width:50%; /* each section takes half of the wrapper's width */
     padding: 2rem;
@@ -100,7 +99,7 @@ section {
 .login , .inscription {
     flex: 1;
 }
- 
+/*
 .hidden {
     transform: translateX(-50%);
 }
